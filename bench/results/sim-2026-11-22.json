@@ -1,0 +1,137 @@
+{
+  "modelMs": 600,
+  "dispatchMs": 400,
+  "rows": [
+    {
+      "scenario": "question during a long task",
+      "msgs": [
+        "export the report",
+        "what time is it in Tokyo?"
+      ],
+      "senju": {
+        "first": [
+          9354,
+          1154
+        ],
+        "stopMs": null,
+        "wall": 9358,
+        "calls": 4
+      },
+      "baseline": {
+        "first": [
+          9204,
+          7704
+        ],
+        "stopMs": null,
+        "wall": 9204,
+        "calls": 2
+      }
+    },
+    {
+      "scenario": "supplement during a long task",
+      "msgs": [
+        "clean up the downloads folder",
+        "keep the PDFs"
+      ],
+      "senju": {
+        "first": [
+          9350,
+          7849
+        ],
+        "stopMs": null,
+        "wall": 9351,
+        "calls": 3
+      },
+      "baseline": {
+        "first": [
+          9210,
+          7710
+        ],
+        "stopMs": null,
+        "wall": 9210,
+        "calls": 2
+      }
+    },
+    {
+      "scenario": "two independent tasks",
+      "msgs": [
+        "render the video",
+        "back up the photos"
+      ],
+      "senju": {
+        "first": [
+          9351,
+          7759
+        ],
+        "stopMs": null,
+        "wall": 9352,
+        "calls": 5
+      },
+      "baseline": {
+        "first": [
+          15810,
+          14811
+        ],
+        "stopMs": null,
+        "wall": 15811,
+        "calls": 3
+      }
+    },
+    {
+      "scenario": "cancel a long task",
+      "msgs": [
+        "download the dataset",
+        "never mind, stop"
+      ],
+      "senju": {
+        "first": [
+          2552,
+          552
+        ],
+        "stopMs": 553,
+        "wall": 2553,
+        "calls": 2
+      },
+      "baseline": {
+        "first": [
+          11208,
+          9208
+        ],
+        "stopMs": 9208,
+        "wall": 11209,
+        "calls": 2
+      }
+    },
+    {
+      "scenario": "mixed burst",
+      "msgs": [
+        "translate the contract",
+        "and summarise it too",
+        "book a table for tonight",
+        "thanks!"
+      ],
+      "senju": {
+        "first": [
+          7351,
+          6352,
+          5752,
+          1153
+        ],
+        "stopMs": null,
+        "wall": 7354,
+        "calls": 8
+      },
+      "baseline": {
+        "first": [
+          11809,
+          10809,
+          10309,
+          9309
+        ],
+        "stopMs": null,
+        "wall": 11809,
+        "calls": 3
+      }
+    }
+  ]
+}

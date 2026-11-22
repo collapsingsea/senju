@@ -1,0 +1,36 @@
+{
+  "name": "senju",
+  "version": "0.1.0",
+  "description": "The full-duplex agent runtime: one persona, many hands. A conversational agent that keeps listening while it works on several things at once.",
+  "type": "module",
+  "main": "./src/index.js",
+  "exports": {
+    ".": "./src/index.js"
+  },
+  "files": [
+    "src",
+    "docs",
+    "README.md",
+    "README.zh-CN.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "test": "node --test \"test/**/*.test.js\"",
+    "bench": "node bench/run.js"
+  },
+  "keywords": [
+    "agent",
+    "full-duplex",
+    "llm",
+    "concurrency",
+    "dispatch",
+    "multi-agent",
+    "super-agent",
+    "tool-use",
+    "interruptible"
+  ],
+  "license": "MIT"
+}
